@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
 
+.body {
+  background-color: #050505;
+  font-family: "Roboto Mono", monospace;
+}
+
+header .nav-logo div a {
+  color: aliceblue;
+}
+header .navbar-horizontal div div div a {
+  margin-right: 2em;
+  color: aliceblue;
+}
 
 /*# sourceMappingURL=style.css.map */
