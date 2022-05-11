@@ -9,6 +9,9 @@
   font-family: "Roboto Mono", monospace;
 }
 
+header .nav-logo div {
+  position: static;
+}
 header .nav-logo div a {
   color: aliceblue;
 }
@@ -28,13 +31,13 @@ header .navbar-horizontal div div div a:hover {
 header .navbar-horizontal div div div a:active {
   color: rgb(200, 196, 196);
 }
-header .portfolio-btn {
+header .nav-btn-purple .portfolio-btn {
   --glow-color: rgb(217, 176, 255);
   --glow-spread-color: rgba(191, 123, 255, 0.781);
   --enhanced-glow-color: rgb(231, 206, 255);
   --btn-color: rgb(100, 61, 136);
   border: 0.25em solid var(--glow-color);
-  padding: 1em 3em;
+  padding: 1em 1.5em;
   color: var(--glow-color);
   font-size: 15px;
   font-weight: bold;
@@ -43,11 +46,11 @@ header .portfolio-btn {
   outline: none;
   box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
   text-shadow: 0 0 0.5em var(--glow-color);
-  position: relative;
+  position: static;
   transition: all 0.3s;
   margin: 1em 1em 0 0;
 }
-header button::after {
+header .nav-btn-purple button::after {
   pointer-events: none;
   content: "";
   position: absolute;
@@ -60,12 +63,12 @@ header button::after {
   opacity: 0.7;
   transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
 }
-header button:hover {
+header .nav-btn-purple button:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
   box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
 }
-header button:active {
+header .nav-btn-purple button:active {
   box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
 }
 
