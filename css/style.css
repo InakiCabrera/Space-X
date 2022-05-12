@@ -9,67 +9,16 @@
   font-family: "Roboto Mono", monospace;
 }
 
-header .nav-logo div {
-  position: static;
+header .nav-bar div a img {
+  padding: 0;
 }
-header .nav-logo div a {
-  color: aliceblue;
+header .nav-bar div div ul li {
+  margin-left: 3em;
 }
-header .navbar-horizontal div button {
-  color: aliceblue;
-}
-header .navbar-horizontal div button span {
-  color: aliceblue;
-}
-header .navbar-horizontal div div div a {
-  margin-right: 2em;
-  color: aliceblue;
-}
-header .navbar-horizontal div div div a:hover {
-  color: rgb(137, 141, 141);
-}
-header .navbar-horizontal div div div a:active {
-  color: rgb(200, 196, 196);
-}
-header .nav-btn-purple .portfolio-btn {
-  --glow-color: rgb(217, 176, 255);
-  --glow-spread-color: rgba(191, 123, 255, 0.781);
-  --enhanced-glow-color: rgb(231, 206, 255);
-  --btn-color: rgb(100, 61, 136);
-  border: 0.25em solid var(--glow-color);
-  padding: 1em 1.5em;
-  color: var(--glow-color);
-  font-size: 15px;
-  font-weight: bold;
-  background-color: var(--btn-color);
-  border-radius: 1em;
-  outline: none;
-  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 1em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
-  text-shadow: 0 0 0.5em var(--glow-color);
-  position: static;
-  transition: all 0.3s;
-  margin: 1em 1em 0 0;
-}
-header .nav-btn-purple button::after {
-  pointer-events: none;
-  content: "";
-  position: absolute;
-  top: 120%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: var(--glow-spread-color);
-  filter: blur(2em);
-  opacity: 0.7;
-  transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
-}
-header .nav-btn-purple button:hover {
-  color: var(--btn-color);
-  background-color: var(--glow-color);
-  box-shadow: 0 0 1em 0.25em var(--glow-color), 0 0 4em 2em var(--glow-spread-color), inset 0 0 0.75em 0.25em var(--glow-color);
-}
-header .nav-btn-purple button:active {
-  box-shadow: 0 0 0.6em 0.25em var(--glow-color), 0 0 2.5em 2em var(--glow-spread-color), inset 0 0 0.5em 0.25em var(--glow-color);
+@media screen and (max-width: 992px) {
+  header .nav-bar div div ul li {
+    margin-left: 1em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
